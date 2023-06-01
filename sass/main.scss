@@ -1,0 +1,28 @@
+// coment. que no compila
+/* comment. que compila */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@import 'vars';
+
+@import 'header';
+@import 'pages';
+@import 'media';
+
+/* operaciones */
+
+.container {
+    width: $boxWith - (15);
+    height: auto;
+}
+
+@media (min-width: $tablet) {
+    .container {
+        width: $boxWith / 2;
+    }
+}
